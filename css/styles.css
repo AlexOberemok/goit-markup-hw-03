@@ -4,10 +4,21 @@
     --third-header-color: #757575;
     --hero-btn: #ffffff;
     --h2-color: #212121;
+    --typical-margin: 30px;
+
 }
 
 body {
     font-family: Roboto, Raleway, sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, ol {
+    padding-left: 0;
+    margin: 0;
 }
 
 .link {
@@ -18,7 +29,26 @@ body {
     list-style: none;
 }
 
+.img {
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 1px solid red
+
+}
+
 /*--------------------------LOGO-----------------------*/
+
+.header {
+    background-color: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 
 .header-logo {
     font-family: 'Raleway';
@@ -90,6 +120,13 @@ body {
 
 /*-----------------------HERO--------------------------*/
 
+.hero {
+    
+    background-color: #2F303A;
+    
+    padding-bottom: 205px;
+}
+
 .hero-main-text {
     background: #2F303A;
     font-family: inherit;
@@ -100,6 +137,9 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    max-width: 696px;
+    padding-top: 195px;
+    padding-bottom: var(--typical-margin);
 }
 
 .hero-btn {
@@ -114,7 +154,9 @@ body {
     color: var(--hero-btn);
     background-color: #2196F3;
     cursor: pointer;
-}
+    
+}   
+
 
 .hero-top-text {
     font-family: inherit;
@@ -124,6 +166,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
+    margin-bottom: 10px;
 }
 
 .hero-bottom-text {
@@ -133,6 +176,8 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    max-width: 270px;
+    padding-bottom: 94px;
 }
 
 
@@ -146,7 +191,12 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--h2-color)
+    color: var(--h2-color);
+    padding-bottom: 50px;
+}
+
+.description-list {
+    padding-bottom: 94px;
 }
 
 /*-------------------------TEAM---------------------------*/
@@ -158,7 +208,8 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--h2-color)
+    color: var(--h2-color);
+    padding-top: 94px;
 }
 
 .team-top-text {
@@ -167,7 +218,9 @@ body {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--h2-color)
+    color: var(--h2-color);
+    margin-bottom: 10px;
+    
 }
 
 .team-bottom-text {
@@ -179,10 +232,26 @@ body {
     color: #757575;
 }
 
+.team-item {
+    width: 270px;
+    height: 368px;
+    padding-bottom: 94px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-images {
+    margin-bottom: var(--typical-margin);
+}
 /*---------------------FOOTER-----------------------------*/
 
 .footer {
     background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-link {
@@ -191,7 +260,8 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: var(--main-header-color)
+color: var(--main-header-color);
+margin-bottom: 20px;
 }
 
 .footer-logo-span {
@@ -215,6 +285,7 @@ color: var(--main-header-color)
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    margin-bottom: 9px;
 }
 
 .footer-link-mail, .footer-link-tel {
@@ -244,6 +315,10 @@ color: var(--main-header-color)
 
 /*----------------PORTFOLIO-----------------------*/
 
+.portfolio-images {
+    padding-bottom: 20px;
+}
+
 .portfolio-button {
     width: 128px;
     height: 38px;
@@ -261,6 +336,9 @@ color: var(--main-header-color)
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+
+    margin-top: 94px;
+    margin-bottom: 50px;
 }
 
 .portfolio-button:hover,
@@ -276,6 +354,7 @@ color: var(--main-header-color)
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
+    padding-bottom: 4px;
 }
 
 .portfolio-bottom-text {
@@ -285,4 +364,5 @@ color: var(--main-header-color)
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: #757575;
+    padding-bottom: 20px;
 }

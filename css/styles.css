@@ -38,7 +38,7 @@ ul, ol {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 1px solid red
+    
 
 }
 
@@ -192,7 +192,7 @@ ul, ol {
 
 .hero-item:not(:last-child) {
     margin-right: var(--typical-margin)
-    max-width: 1170px;
+    max-width 1170px;
 }
 
 .hero-list {
@@ -236,7 +236,7 @@ ul, ol {
 
 .description {
     font-family: inherit 
-    font-weight: 700;
+    font-weight 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -262,7 +262,7 @@ ul, ol {
 
 .team {
     font-family: inherit
-    font-weight: 700;
+    font-weight 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
